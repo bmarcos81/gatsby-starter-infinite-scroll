@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Infinite Scroll`,
+    title: `Galeria de Utensilios Decocina`,
     description: `Need infinite scroll or pagination in your Gatsby project? This starter is for you.`,
     author: `baobabKoodaa`,
   },

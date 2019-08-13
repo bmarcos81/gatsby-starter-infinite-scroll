@@ -9,15 +9,15 @@ exports.createPages = ({ graphql, actions}) => {
      * In order to keep the repo small, the rest of the images are fetched from Unsplash by the client's
      * browser. Their URLs are stored in a text file. You don't want to fetch images like that in production.
      */
-    var rawRemoteUrls = JSON.parse(fs.readFileSync('content/images/remote_image_urls.json', 'utf8'));
-    const remoteImages = rawRemoteUrls.map(url => {
+    //var rawRemoteUrls = JSON.parse(fs.readFileSync('content/images/remote_image_urls.json', 'utf8'));
+    const remoteImages = {}; /*rawRemoteUrls.map(url => {
         const thumbnailResizeParams = '?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=300&h=300&fit=crop'
         const largeResizeParams = '?w=1200&q=90'
         return {
             "l": url+largeResizeParams,
             "s": url+thumbnailResizeParams
         }
-    })
+    })*/
 
     /* In production you should fetch your images with GraphQL like this: */
     return graphql(`
@@ -54,7 +54,7 @@ exports.createPages = ({ graphql, actions}) => {
             }
         })
 
-        const images = [...localImages, ...remoteImages]
+        const images = localImages;//[...localImages, ...remoteImages]
 
         /* Gatsby will use this template to render the paginated pages (including the initial page for infinite scroll). */
         const paginatedPageTemplate = path.resolve(`src/templates/paginatedPageTemplate.js`)

@@ -36,7 +36,7 @@ class View extends React.Component {
             <>
 
                 {/* Traffic Lights to toggle between Infinite Scroll and Pagination. */}
-                <TrafficLight onClick={g.toggle} green={g.useInfiniteScroll} pageContext={pageContext} />
+                {/*<TrafficLight onClick={g.toggle} green={g.useInfiniteScroll} pageContext={pageContext} />*/}
 
                 {/* Infinite Scroll */}
                 <InfiniteScroll

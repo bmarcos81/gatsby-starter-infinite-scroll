@@ -25,7 +25,7 @@ class Layout extends React.Component {
         render={data => (
               <>
                 {/* GitHub Ribbon */}
-                <a href="https://github.com/baobabKoodaa/gatsby-starter-infinite-scroll">
+{/*                 <a href="https://github.com/baobabKoodaa/gatsby-starter-infinite-scroll">
                   <img
                     src={ribbon}
                     alt="Fork me on GitHub"
@@ -47,7 +47,7 @@ class Layout extends React.Component {
                     }
                   `}
                   </style>
-                </a>
+                </a> */}
                 
                 <Header siteTitle={data.site.siteMetadata.title} />
                 <div
