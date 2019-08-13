@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Galeria de Utensilios Decocina`,
-    description: `Need infinite scroll or pagination in your Gatsby project? This starter is for you.`,
-    author: `baobabKoodaa`,
+    description: `Esta es una galería infinita de utensilios de cocina.`,
+    author: `bmarcos81`,
   },
   plugins: [
     {
